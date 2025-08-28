@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #5a4d2d;
+    font-family: 'Courier New', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 10px 0 20px;
+    font-family: "Indie Flower", cursive;
+  }
+  
+  /* แถวบน */
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid #9b4a2e;
+  }
+  
+  /* แถวกลาง */
+  .middle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  /* รีลวงกลม (ขยายแล้ว) */
+  .circle {
+    position: relative;
+    width: 160px;   /* เดิม 120px → ขยาย */
+    height: 160px;  /* เดิม 120px → ขยาย */
+    border-radius: 50%;
+    background: #a0c0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 14px solid #666; /* หนาขึ้นนิดหน่อย */
+    border-radius: 50%;
+  }
+  
+  .ring-inner {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 8px solid #444; /* ขยายตามวงกลม */
+    border-radius: 50%;
+  }
+  
+  .hub {
+    position: absolute;
+    width: 35px;   /* เดิม 25px → ขยาย */
+    height: 35px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .spokes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg 30deg,
+      #444 30deg 60deg,
+      transparent 60deg 90deg,
+      #444 90deg 120deg,
+      transparent 120deg 150deg,
+      #444 150deg 180deg,
+      transparent 180deg 210deg,
+      #444 210deg 240deg,
+      transparent 240deg 270deg,
+      #444 270deg 300deg,
+      transparent 300deg 330deg,
+      #444 330deg 360deg
+    );
+    border-radius: 50%;
+  }
+  
+  /* การหมุน */
+  .spinning {
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* กล่องตรงกลาง */
+  .center-box {
+    background: #d1c3a4;
+    width: 40%;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  
+  .center-box h2 {
+    margin: 0;
+    color: #a39a9a;
+    font-size: 32px;
+  }
+  
+  .center-box p {
+    margin-top: 10px;
+    color: #a39a9a;
+    font-size: 22px;
+  }
+  
+  /* แถวล่าง */
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 120px solid #9b4a2e;
+  }
+  
+  /* แถบล่าง */
+  .bottom-bar {
+    width: 60%;
+    height: 80px;
+    background: #d1c3a4;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .bottom-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    background: repeating-linear-gradient(
+      to bottom,
+      #666,
+      #666 8px,
+      #d1c3a4 8px,
+      #d1c3a4 16px
+    );
+  }
+  

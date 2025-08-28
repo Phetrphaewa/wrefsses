@@ -1,0 +1,121 @@
+/* ฟอนต์โมเดิร์น */
+body {
+    font-family: "Kanit", sans-serif;
+    background: #f5f2ef;
+    color: #3e2723;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #5d4037;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+  }
+  
+  .navbar .logo {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc80;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    min-height: 80vh;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text h1 span {
+    color: #8d6e63;
+  }
+  
+  .hero-text p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #5d4037;
+  }
+  
+  .hero-text .btn {
+    background: #8d6e63;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .hero-text .btn:hover {
+    background: #6d4c41;
+  }
+  
+  /* Hero Image */
+  .hero-img img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  /* About Section */
+  .about {
+    text-align: center;
+    padding: 60px 10%;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+    color: #6d4c41;
+  }
+  
+  .about p {
+    font-size: 18px;
+    color: #4e342e;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #5d4037;
+    color: #fff;
+    margin-top: 40px;
+  }
+  
